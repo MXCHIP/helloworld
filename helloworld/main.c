@@ -45,7 +45,7 @@ int main(void)
 	/* Trigger mxos system led available on most mxosKit */
 	while (1)
 	{
-		mxos_gpio_output_toggle(MXOS_SYS_LED);
-		mxos_rtos_delay_milliseconds(1000);
+		mhal_gpio_toggle(MXOS_SYS_LED);
+		mos_sleep(1);
 	}
 }
