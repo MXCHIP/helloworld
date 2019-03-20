@@ -3,3 +3,4 @@ build
 .gdbinit
 .openocd_cfg
 .project
+.vscode

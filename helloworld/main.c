@@ -46,6 +46,6 @@ int main(void)
 	while (1)
 	{
 		mhal_gpio_toggle(MXOS_SYS_LED);
-		mos_sleep(1);
+		mos_sleep(1.0);
 	}
 }
