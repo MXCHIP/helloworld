@@ -42,7 +42,7 @@ int main(void)
 	/* Output on debug serial port */
 	app_log("Hello world!");
 
-	/* Trigger mxos system led available on most mxosKit */
+	/* Toggle mxos system led available on most mxosKits */
 	while (1)
 	{
 		mhal_gpio_toggle(MXOS_SYS_LED);
