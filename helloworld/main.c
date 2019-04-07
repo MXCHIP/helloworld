@@ -32,7 +32,7 @@
 
 #include "mxos.h"
 
-#define app_log(format, ...) custom_log("APP", format, ##__VA_ARGS__)
+#define app_log(M, ...)       MXOS_LOG(CONFIG_APP_DEBUG, "APP", M, ##__VA_ARGS__)
 
 int main(void)
 {
